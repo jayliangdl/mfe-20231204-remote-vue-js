@@ -58,7 +58,8 @@ module.exports = (env) => {
         filename: "remoteVueJsEntry.js",
         remotes: {},
         exposes: {
-          './MyVueJSButton':'./src/MyVueJSButton.vue'
+          './MyVueJSButton':'./src/MyVueJSButton.vue',
+          './VanillaMyVueJSButton':'./src/VanillaMyVueJSButton.js'
         },
         shared: require("../package.json").dependencies,
       }),

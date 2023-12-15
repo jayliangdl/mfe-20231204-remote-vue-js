@@ -1,6 +1,6 @@
 <template>
   <div class="{{CONTAINER}}">
-    <MyVueJSButton />
+    <MyVueJSButton :initnum="5" :initstep="1"/>
   </div>
 </template>
 

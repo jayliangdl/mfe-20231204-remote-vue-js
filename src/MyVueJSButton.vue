@@ -11,11 +11,15 @@ import { ref } from 'vue';
 
 export default {
   name: 'MyVueJSButton',
-  setup() {
-    const num = ref(0);
-
+  props: 
+  {
+      initnum:Number,
+      initstep:Number
+  },
+  setup(props) {
+    const num = ref(props.initnum);
     const increment = () => {
-      num.value += 2;
+      num.value += props.initstep;
     };
 
     return { num, increment };
